@@ -1,3 +1,8 @@
+
+-- Replace 'Spring Promo 2026' with whatever name you want
+INSERT INTO campaigns (id, name) 
+VALUES (1, 'Spring Promo 2026');
+
 INSERT INTO messages (id, campaign_id, customer_id, phone_number, status, sent_at, delivered_at, read_at, error_reason) VALUES
 (6, 1, 906, '+1 212 555 0101', 'READ', '2026-02-02 09:00:00Z', '2026-02-02 09:00:15Z', '2026-02-02 09:05:00Z', NULL),
 (7, 1, 907, '+1 212 555 0102', 'DELIVERED', '2026-02-02 09:02:10Z', '2026-02-02 09:02:25Z', NULL, NULL),
@@ -11,3 +16,4 @@ INSERT INTO messages (id, campaign_id, customer_id, phone_number, status, sent_a
 (15, 1, 915, '+1 212 555 0110', 'READ', '2026-02-02 09:30:10Z', '2026-02-02 09:30:25Z', '2026-02-02 09:45:00Z', NULL),
 -- ... (rest of the 50 rows follow the same pattern)
 (55, 1, 955, '+1 212 555 0150', 'FAILED', '2026-02-02 12:50:00Z', NULL, NULL, 'Carrier filtering');
+
